@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+# L1/L2 cache size parameters by @JustArchi
+BOARD_GLOBAL_CFLAGS := --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=2048
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
