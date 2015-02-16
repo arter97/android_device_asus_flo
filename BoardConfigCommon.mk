@@ -108,6 +108,8 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 
 HAVE_ADRENO_SOURCE:= false
 
+TARGET_BOOTANIMATION_PRELOAD := true
+
 BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
 # The list below is order dependent
