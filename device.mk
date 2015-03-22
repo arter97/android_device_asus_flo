@@ -20,7 +20,10 @@
 # Everything in this directory will become public
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.carrier=wifi-only
+    ro.carrier=wifi-only \
+    ro.ota.romname=Temasek-flo \
+    ro.ota.version=$(shell date +%F | sed s@-@@g) \
+    ro.ota.manifest=http://arter97.com/ota/temasek/flo.xml
 
 PRODUCT_COPY_FILES := \
     device/asus/flo/fstab.flo:root/fstab.flo \
